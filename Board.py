@@ -5,6 +5,17 @@ from io import BytesIO
 import base64
 import streamlit as st
 from streamlit_image_comparison import image_comparison
+import youtube_dl
+import requests
+import pprint
+from time import sleep
+from streamlit_player import st_player
+
+
+
+
+
+
 
 
 st.set_page_config(layout="wide", page_title="Background Buster")
@@ -17,11 +28,7 @@ st.sidebar.write("## Upload and download :gear:")
 
 MAX_FILE_SIZE = 5 * 1024 * 1024  # 5MB
 
-video_file = open('Untitled 3C.mp4', 'rb')
-video_bytes = video_file.read()
-
-st.video(video_bytes)
-
+st_player("https://www.youtube.com/watch?v=0aRqpV7ifME")
 
 # Download the fixed image
 def convert_image(img):
