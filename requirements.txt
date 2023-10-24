@@ -3,3 +3,4 @@ rembg==2.0.40
 streamlit==1.23.1
 streamlit_image_comparison==0.0.4
 youtube_dl==2021.12.17
+streamlit_player==0.1.2
