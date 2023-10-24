@@ -1,4 +1,4 @@
 Pillow==9.5.0
 rembg==2.0.40
-streamlit==1.27.1
+streamlit==1.23.1
 streamlit_image_comparison==0.0.4
